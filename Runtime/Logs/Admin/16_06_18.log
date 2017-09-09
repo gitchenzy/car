@@ -1,0 +1,31 @@
+[ 2016-06-18T10:36:51+08:00 ] 127.0.0.1 /admin/AutoSendEmail/getbug
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `feedback` WHERE `FbTime` < '2016-06-18 10:36:41' AND `FBtype` = 2 AND `allotted` = 0 AND `DelFlag` = 0  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `feedback` WHERE `Accept` = 2 AND `DelFlag` = 0  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT `Email` FROM `employee` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-06-18T10:38:07+08:00 ] 127.0.0.1 /admin/AutoSendEmail/getNeed
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `feedback` WHERE `FBtype` = 1 AND `FbStatusID` = 1 AND `allotted` = 0 AND `DelFlag` = 0 AND `Accept` is null  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT `Email` FROM `employee` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

@@ -1,0 +1,2811 @@
+[ 2016-04-22T09:26:48+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T09:26:48+08:00 ] 127.0.0.1 /admin/account/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `employee` WHERE `Status` = 0 AND `DelFlag` = 0 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T09:27:00+08:00 ] 127.0.0.1 /admin/account/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `employee` WHERE `EmployeeNum` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-04-22T09:27:00+08:00 ] 127.0.0.1 /admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/menu.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T09:27:00+08:00 ] 127.0.0.1 /admin/img/a7.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T09:27:00+08:00 ] 127.0.0.1 /admin/img/a4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T09:27:00+08:00 ] 127.0.0.1 /admin/img/a7.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T09:27:00+08:00 ] 127.0.0.1 /admin/img/a4.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T09:27:12+08:00 ] 127.0.0.1 /admin/Customer/MoCustomer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T09:27:12+08:00 ] 127.0.0.1 /admin/Customer/loadMoCustomer?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM customer C WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT C.*,S.CtmStatusName,K.CtmRankName,R.CtmRoleName FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID  WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T09:27:15+08:00 ] 127.0.0.1 /admin/Customer/importMoCustomer?&t=0.3727824904490262
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T09:27:15+08:00 ] 127.0.0.1 /admin/Customer/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-22T09:27:23+08:00 ] 127.0.0.1 /index.php/Admin/file/uploadPicture.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\WWW\crm\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: {"status":1,"info":"\u4e0a\u4f20\u6210\u529f","data":"\/uploads\/2\/picture\/2016-04-22\/57197dfb1e7bb.xls"}
+
+[ 2016-04-22T09:27:25+08:00 ] 127.0.0.1 /admin/Customer/loadMoCustomer?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM customer C WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT C.*,S.CtmStatusName,K.CtmRankName,R.CtmRoleName FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID  WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-22T09:27:30+08:00 ] 127.0.0.1 /admin/Customer/importMoCustomer?&t=0.13667314569465816
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-22T09:27:31+08:00 ] 127.0.0.1 /admin/Customer/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-22T09:27:39+08:00 ] 127.0.0.1 /index.php/Admin/file/uploadPicture.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\WWW\crm\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: {"status":1,"info":"\u4e0a\u4f20\u6210\u529f","data":"\/uploads\/2\/picture\/2016-04-22\/57197e0b2d5b2.xls"}
+
+[ 2016-04-22T09:27:45+08:00 ] 127.0.0.1 /admin/Customer/importMoCustomer?&t=0.13667314569465816
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+ERR: The filename E:\WWW\crm\WebRoot/uploads/2/picture/2016-04-22/57197e0b2d5b2.xls is not recognised as an OLE file
+
+[ 2016-04-22T09:29:56+08:00 ] 127.0.0.1 /admin/Customer/loadMoCustomer?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM customer C WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT C.*,S.CtmStatusName,K.CtmRankName,R.CtmRoleName FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID  WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-22T09:32:52+08:00 ] 127.0.0.1 /admin/Customer/MoCustomer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-22T09:32:53+08:00 ] 127.0.0.1 /admin/Customer/loadMoCustomer?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM customer C WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT C.*,S.CtmStatusName,K.CtmRankName,R.CtmRoleName FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID  WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T09:33:00+08:00 ] 127.0.0.1 /admin/Customer/importMoCustomer?&t=0.11884933221153915
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T09:33:00+08:00 ] 127.0.0.1 /admin/Customer/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T09:33:03+08:00 ] 127.0.0.1 /index.php/Admin/file/uploadPicture.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\WWW\crm\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: {"status":1,"info":"\u4e0a\u4f20\u6210\u529f","data":"\/uploads\/2\/picture\/2016-04-22\/57197f4faf604.xls"}
+
+[ 2016-04-22T09:33:06+08:00 ] 127.0.0.1 /admin/Customer/importMoCustomer?&t=0.11884933221153915
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+
+[ 2016-04-22T09:49:01+08:00 ] 127.0.0.1 /index.php/Admin/file/uploadPicture.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\WWW\crm\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: {"status":1,"info":"\u4e0a\u4f20\u6210\u529f","data":"\/uploads\/2\/picture\/2016-04-22\/5719830d0eea9.xls"}
+
+[ 2016-04-22T09:49:04+08:00 ] 127.0.0.1 /admin/Customer/importMoCustomer?&t=0.11884933221153915
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0070s ]
+ERR: The filename E:\WWW\crm\WebRoot/uploads/2/picture/2016-04-22/5719830d0eea9.xls is not recognised as an OLE file
+
+[ 2016-04-22T10:07:56+08:00 ] 127.0.0.1 /index.php/Admin/file/uploadPicture.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\WWW\crm\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: {"status":1,"info":"\u4e0a\u4f20\u6210\u529f","data":"\/uploads\/2\/picture\/2016-04-22\/5719877c0abee.xls"}
+
+[ 2016-04-22T10:07:58+08:00 ] 127.0.0.1 /admin/Customer/importMoCustomer?&t=0.11884933221153915
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T10:10:33+08:00 ] 127.0.0.1 /index.php/Admin/file/uploadPicture.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\WWW\crm\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: {"status":1,"info":"\u4e0a\u4f20\u6210\u529f","data":"\/uploads\/2\/picture\/2016-04-22\/57198819416e7.xls"}
+
+[ 2016-04-22T10:10:35+08:00 ] 127.0.0.1 /admin/Customer/importMoCustomer?&t=0.11884933221153915
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T10:16:45+08:00 ] 127.0.0.1 /admin/Customer/loadMoCustomer?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM customer C WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT C.*,S.CtmStatusName,K.CtmRankName,R.CtmRoleName FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID  WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T10:43:25+08:00 ] 127.0.0.1 /admin/Customer/customer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-22T10:43:26+08:00 ] 127.0.0.1 /admin/Customer/loadCustomer?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM customer C WHERE C.DelFlag = 0 ORDER BY C.Sort asc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT C.*,S.CtmStatusName,K.CtmRankName,R.CtmRoleName FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID  WHERE C.DelFlag = 0 ORDER BY C.Sort asc LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `agent` [ RunTime:0.0070s ]
+SQL: SELECT `CompanyName` FROM `agent` WHERE `AgentID` = 7 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `CompanyName` FROM `agent` WHERE `AgentID` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CompanyName` FROM `agent` WHERE `AgentID` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CompanyName` FROM `agent` WHERE `AgentID` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CompanyName` FROM `agent` WHERE `AgentID` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T10:43:27+08:00 ] 127.0.0.1 /admin/Customer/addCustomer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SELECT `CtmStatusID`,`CtmStatusName` FROM `customerstatus` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `CtmRoleID`,`CtmRoleName` FROM `customerrole` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `CtmRankID`,`CtmRankName` FROM `customerrank` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `CtmCloseID`,`CtmCloseName` FROM `customerclose` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 7 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 12 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 18 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 25 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 31 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 38 行.
+NOTIC: [8] Use of undefined constant CtmStatusID - assumed 'CtmStatusID' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 42 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 42 行.
+NOTIC: [8] Use of undefined constant cs - assumed 'cs' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 42 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 48 行.
+NOTIC: [8] Use of undefined constant CtmRoleID - assumed 'CtmRoleID' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 52 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 52 行.
+NOTIC: [8] Use of undefined constant cr - assumed 'cr' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 52 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 58 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 62 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 68 行.
+NOTIC: [8] Use of undefined constant CtmCloseID - assumed 'CtmCloseID' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 72 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 72 行.
+NOTIC: [8] Use of undefined constant co - assumed 'co' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 72 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 79 行.
+NOTIC: [8] Use of undefined constant CtmRankID - assumed 'CtmRankID' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 83 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 83 行.
+NOTIC: [8] Use of undefined constant ck - assumed 'ck' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 83 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 89 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 93 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T10:50:37+08:00 ] 127.0.0.1 /admin/Customer/loadCustomer?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM customer C WHERE C.DelFlag = 0 ORDER BY C.Sort asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT C.*,S.CtmStatusName,K.CtmRankName,R.CtmRoleName FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID  WHERE C.DelFlag = 0 ORDER BY C.Sort asc LIMIT 0,10   [ RunTime:0.0030s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `agent` [ RunTime:0.0060s ]
+SQL: SELECT `CompanyName` FROM `agent` WHERE `AgentID` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CompanyName` FROM `agent` WHERE `AgentID` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CompanyName` FROM `agent` WHERE `AgentID` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CompanyName` FROM `agent` WHERE `AgentID` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CompanyName` FROM `agent` WHERE `AgentID` = 7 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T11:02:57+08:00 ] 127.0.0.1 /admin/Customer/importMoCustomer?&t=0.7654841847252101
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T11:02:57+08:00 ] 127.0.0.1 /admin/Customer/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T11:09:49+08:00 ] 127.0.0.1 /admin/Customer/loadMoCustomer?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM customer C WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT C.*,S.CtmStatusName,K.CtmRankName,R.CtmRoleName FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID  WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T11:09:51+08:00 ] 127.0.0.1 /admin/Customer/addMoCustomer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SELECT `CtmStatusID`,`CtmStatusName` FROM `customerstatus` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `CtmRankID`,`CtmRankName` FROM `customerrank` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `CtmCloseID`,`CtmCloseName` FROM `customerclose` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\127e45aae6e9706c0fce17c3d257c3d7.php 第 7 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\127e45aae6e9706c0fce17c3d257c3d7.php 第 12 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\127e45aae6e9706c0fce17c3d257c3d7.php 第 18 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\127e45aae6e9706c0fce17c3d257c3d7.php 第 25 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\127e45aae6e9706c0fce17c3d257c3d7.php 第 31 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\127e45aae6e9706c0fce17c3d257c3d7.php 第 38 行.
+NOTIC: [8] Use of undefined constant CtmStatusID - assumed 'CtmStatusID' E:\WWW\crm\Runtime\Cache\Admin\127e45aae6e9706c0fce17c3d257c3d7.php 第 42 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\127e45aae6e9706c0fce17c3d257c3d7.php 第 42 行.
+NOTIC: [8] Use of undefined constant cs - assumed 'cs' E:\WWW\crm\Runtime\Cache\Admin\127e45aae6e9706c0fce17c3d257c3d7.php 第 42 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\127e45aae6e9706c0fce17c3d257c3d7.php 第 48 行.
+NOTIC: [8] Use of undefined constant CtmCloseID - assumed 'CtmCloseID' E:\WWW\crm\Runtime\Cache\Admin\127e45aae6e9706c0fce17c3d257c3d7.php 第 52 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\127e45aae6e9706c0fce17c3d257c3d7.php 第 52 行.
+NOTIC: [8] Use of undefined constant co - assumed 'co' E:\WWW\crm\Runtime\Cache\Admin\127e45aae6e9706c0fce17c3d257c3d7.php 第 52 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\127e45aae6e9706c0fce17c3d257c3d7.php 第 59 行.
+NOTIC: [8] Use of undefined constant CtmRankID - assumed 'CtmRankID' E:\WWW\crm\Runtime\Cache\Admin\127e45aae6e9706c0fce17c3d257c3d7.php 第 63 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\127e45aae6e9706c0fce17c3d257c3d7.php 第 63 行.
+NOTIC: [8] Use of undefined constant ck - assumed 'ck' E:\WWW\crm\Runtime\Cache\Admin\127e45aae6e9706c0fce17c3d257c3d7.php 第 63 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\127e45aae6e9706c0fce17c3d257c3d7.php 第 69 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\127e45aae6e9706c0fce17c3d257c3d7.php 第 75 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T11:12:13+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/menu.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T11:32:17+08:00 ] 127.0.0.1 /admin/Customer/customerstatus
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T11:32:18+08:00 ] 127.0.0.1 /admin/Customer/loadCustomerStatus?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `customerstatus` WHERE `DelFlag` = 0 ORDER BY Sort desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `customerstatus` WHERE `DelFlag` = 0 ORDER BY Sort desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T11:33:09+08:00 ] 127.0.0.1 /admin/Customer/customerRank
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T11:33:09+08:00 ] 127.0.0.1 /admin/Customer/loadCustomerRank?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `customerrank` WHERE `DelFlag` = 0 ORDER BY Sort desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `customerrank` WHERE `DelFlag` = 0 ORDER BY Sort desc LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T11:33:17+08:00 ] 127.0.0.1 /admin/Customer/customerRole
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T11:33:17+08:00 ] 127.0.0.1 /admin/Customer/loadCustomerRole?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `customerrole` WHERE `DelFlag` = 0 ORDER BY Sort desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `customerrole` WHERE `DelFlag` = 0 ORDER BY Sort desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T11:34:18+08:00 ] 127.0.0.1 /admin/Customer/customerRole
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T11:34:18+08:00 ] 127.0.0.1 /admin/Customer/loadCustomerRole?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `customerrole` WHERE `DelFlag` = 0 ORDER BY Sort desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `customerrole` WHERE `DelFlag` = 0 ORDER BY Sort desc LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T11:38:14+08:00 ] 127.0.0.1 /admin/Customer/customerClose
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T11:38:14+08:00 ] 127.0.0.1 /admin/Customer/loadCustomerClose?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `customerclose` WHERE `DelFlag` = 0 ORDER BY Sort desc LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `customerclose` WHERE `DelFlag` = 0 ORDER BY Sort desc LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T11:39:03+08:00 ] 127.0.0.1 /admin/Customer/customerClose
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T11:39:04+08:00 ] 127.0.0.1 /admin/Customer/loadCustomerClose?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `customerclose` WHERE `DelFlag` = 0 ORDER BY Sort desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `customerclose` WHERE `DelFlag` = 0 ORDER BY Sort desc LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T14:30:51+08:00 ] 127.0.0.1 /admin/Customer/loadMoCustomer?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM customer C WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT C.*,S.CtmStatusName,K.CtmRankName,R.CtmRoleName FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID  WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T14:43:10+08:00 ] 127.0.0.1 /admin/Customer/importMoCustomer?&t=0.5002778838388622
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T14:43:11+08:00 ] 127.0.0.1 /admin/Customer/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T14:46:07+08:00 ] 127.0.0.1 /admin/Customer/MoCustomer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T14:46:07+08:00 ] 127.0.0.1 /admin/Customer/loadMoCustomer?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM customer C WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT C.*,S.CtmStatusName,K.CtmRankName,R.CtmRoleName FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID  WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-04-22T14:46:09+08:00 ] 127.0.0.1 /admin/Customer/importMoCustomer?&t=0.9748310628347099
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.1110s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T14:46:09+08:00 ] 127.0.0.1 /admin/Customer/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T14:46:23+08:00 ] 127.0.0.1 /admin/Customer/loadMoCustomer?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM customer C WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT C.*,S.CtmStatusName,K.CtmRankName,R.CtmRoleName FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID  WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T14:46:25+08:00 ] 127.0.0.1 /admin/Customer/MoCustomer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T14:46:26+08:00 ] 127.0.0.1 /admin/Customer/loadMoCustomer?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM customer C WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT C.*,S.CtmStatusName,K.CtmRankName,R.CtmRoleName FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID  WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T14:46:27+08:00 ] 127.0.0.1 /admin/Customer/importMoCustomer?&t=0.1301652097608894
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T14:46:27+08:00 ] 127.0.0.1 /admin/Customer/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T14:52:45+08:00 ] 127.0.0.1 /admin/Customer/MoCustomer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T14:52:45+08:00 ] 127.0.0.1 /admin/Customer/loadMoCustomer?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM customer C WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT C.*,S.CtmStatusName,K.CtmRankName,R.CtmRoleName FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID  WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T14:52:47+08:00 ] 127.0.0.1 /admin/Customer/importMoCustomer?&t=0.755225507542491
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T14:52:47+08:00 ] 127.0.0.1 /admin/Customer/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T14:53:27+08:00 ] 127.0.0.1 /admin/Customer/MoCustomer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T14:53:27+08:00 ] 127.0.0.1 /admin/Customer/loadMoCustomer?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM customer C WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT C.*,S.CtmStatusName,K.CtmRankName,R.CtmRoleName FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID  WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T14:53:28+08:00 ] 127.0.0.1 /admin/Customer/importMoCustomer?&t=0.8255583371501416
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0080s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T14:53:29+08:00 ] 127.0.0.1 /admin/Customer/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T14:53:32+08:00 ] 127.0.0.1 /index.php/Admin/file/uploadPicture.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\WWW\crm\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: {"status":1,"info":"\u4e0a\u4f20\u6210\u529f","data":"\/uploads\/2\/picture\/2016-04-22\/5719ca6c2e6c2.xls"}
+
+[ 2016-04-22T14:53:36+08:00 ] 127.0.0.1 /admin/Customer/importMoCustomer?&t=0.8255583371501416
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0070s ]
+SQL: SELECT MAX(Identifier) AS tp_max FROM `customer` LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `customer` (`LoginName`,`ShortName`,`FullName`,`CtmStatusID`,`CtmRankID`,`Contacter`,`CtmRoleID`,`Telephone`,`Mobile`,`Email`,`WeChat`,`Status`,`Address`,`CtmCloseID`,`Password`,`CreateTime`,`ModifyTime`,`OperatorID`,`Identifier`,`Random`,`Sources`) VALUES ('ceshi','cheshi','cheshizhong ','1','1','chenzhiyuan','8','0595-87589404','13711812694','625244441@qq.com','qq62524441','0','这里','4','5bf826d9f00ddf4e259810e6ddcdd955','2016-04-22 14:53:36','2016-04-22 14:53:36','2','350500000028','769982','1') [ RunTime:0.0640s ]
+SQL: SELECT MAX(Identifier) AS tp_max FROM `customer` LIMIT 1   [ RunTime:0.0010s ]
+ERR: 1406:Data too long for column 'Mobile' at row 1
+ [ SQL语句 ] : INSERT INTO `customer` (`LoginName`,`ShortName`,`FullName`,`CtmStatusID`,`CtmRankID`,`Contacter`,`CtmRoleID`,`Telephone`,`Mobile`,`Email`,`WeChat`,`Status`,`Address`,`CtmCloseID`,`Password`,`CreateTime`,`ModifyTime`,`OperatorID`,`Identifier`,`Random`,`Sources`) VALUES ('测试','测试','测试种','1','2','官迪','9','0595-875000','159060880529','625244441','6252441','0','这个','5','2f6c177209b856ca837327455f2b8f30','2016-04-22 14:53:36','2016-04-22 14:53:36','2','350500000029','991778','1')
+ERR: 1406:Data too long for column 'Mobile' at row 1
+ [ SQL语句 ] : INSERT INTO `customer` (`LoginName`,`ShortName`,`FullName`,`CtmStatusID`,`CtmRankID`,`Contacter`,`CtmRoleID`,`Telephone`,`Mobile`,`Email`,`WeChat`,`Status`,`Address`,`CtmCloseID`,`Password`,`CreateTime`,`ModifyTime`,`OperatorID`,`Identifier`,`Random`,`Sources`) VALUES ('测试','测试','测试种','1','2','官迪','9','0595-875000','159060880529','625244441','6252441','0','这个','5','2f6c177209b856ca837327455f2b8f30','2016-04-22 14:53:36','2016-04-22 14:53:36','2','350500000029','991778','1')
+
+[ 2016-04-22T14:53:56+08:00 ] 127.0.0.1 /admin/Customer/loadMoCustomer?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM customer C WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT C.*,S.CtmStatusName,K.CtmRankName,R.CtmRoleName FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID  WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 0,10   [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T14:55:07+08:00 ] 127.0.0.1 /admin/Customer/editMoCustomer?id=33&t=0.6873211052734405
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SELECT `CtmStatusID`,`CtmStatusName` FROM `customerstatus` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `CtmRankID`,`CtmRankName` FROM `customerrank` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `CtmCloseID`,`CtmCloseName` FROM `customerclose` WHERE `DelFlag` = 0  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `customer` WHERE `DelFlag` = 0 AND `CustomerID` = 33 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant CtmStatusID - assumed 'CtmStatusID' E:\WWW\crm\Runtime\Cache\Admin\127e45aae6e9706c0fce17c3d257c3d7.php 第 42 行.
+NOTIC: [8] Use of undefined constant cs - assumed 'cs' E:\WWW\crm\Runtime\Cache\Admin\127e45aae6e9706c0fce17c3d257c3d7.php 第 42 行.
+NOTIC: [8] Use of undefined constant CtmCloseID - assumed 'CtmCloseID' E:\WWW\crm\Runtime\Cache\Admin\127e45aae6e9706c0fce17c3d257c3d7.php 第 52 行.
+NOTIC: [8] Use of undefined constant co - assumed 'co' E:\WWW\crm\Runtime\Cache\Admin\127e45aae6e9706c0fce17c3d257c3d7.php 第 52 行.
+NOTIC: [8] Use of undefined constant CtmRankID - assumed 'CtmRankID' E:\WWW\crm\Runtime\Cache\Admin\127e45aae6e9706c0fce17c3d257c3d7.php 第 63 行.
+NOTIC: [8] Use of undefined constant ck - assumed 'ck' E:\WWW\crm\Runtime\Cache\Admin\127e45aae6e9706c0fce17c3d257c3d7.php 第 63 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T14:55:15+08:00 ] 127.0.0.1 /admin/Customer/loadMoCustomer?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM customer C WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT C.*,S.CtmStatusName,K.CtmRankName,R.CtmRoleName FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID  WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T14:55:17+08:00 ] 127.0.0.1 /admin/Customer/contacts?id=33&t=0.5507237869314849
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0070s ]
+SQL: SELECT `CtmRoleID`,`CtmRoleName` FROM `customerrole` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `contacts` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `contacts` WHERE `DelFlag` = 0 AND `CustomerID` = '33'  [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T14:55:21+08:00 ] 127.0.0.1 /admin/Customer/loadMoCustomer?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM customer C WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT C.*,S.CtmStatusName,K.CtmRankName,R.CtmRoleName FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID  WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-22T15:20:09+08:00 ] 127.0.0.1 /admin/Customer/MoCustomer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T15:20:09+08:00 ] 127.0.0.1 /admin/Customer/loadMoCustomer?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM customer C WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT C.*,S.CtmStatusName,K.CtmRankName,R.CtmRoleName FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID  WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T15:20:11+08:00 ] 127.0.0.1 /admin/Customer/importMoCustomer?&t=0.9422201092820615
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T15:20:11+08:00 ] 127.0.0.1 /admin/Customer/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T15:20:12+08:00 ] 127.0.0.1 /index.php/Admin/Customer/download
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T15:20:56+08:00 ] 127.0.0.1 /admin/Customer/MoCustomer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T15:20:57+08:00 ] 127.0.0.1 /admin/Customer/loadMoCustomer?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM customer C WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT C.*,S.CtmStatusName,K.CtmRankName,R.CtmRoleName FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID  WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T15:20:58+08:00 ] 127.0.0.1 /admin/Customer/importMoCustomer?&t=0.6121108417864889
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T15:20:59+08:00 ] 127.0.0.1 /admin/Customer/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T15:21:01+08:00 ] 127.0.0.1 /index.php/Admin/Customer/download
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T15:23:55+08:00 ] 127.0.0.1 /admin/Customer/MoCustomer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2016-04-22T15:23:55+08:00 ] 127.0.0.1 /admin/Customer/loadMoCustomer?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM customer C WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT C.*,S.CtmStatusName,K.CtmRankName,R.CtmRoleName FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID  WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T15:23:57+08:00 ] 127.0.0.1 /admin/Customer/importMoCustomer?&t=0.16200961009599268
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T15:23:57+08:00 ] 127.0.0.1 /admin/Customer/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-04-22T15:23:58+08:00 ] 127.0.0.1 /index.php/Admin/Customer/download
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-22T15:24:06+08:00 ] 127.0.0.1 /index.php/Admin/Customer/download
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-22T15:37:51+08:00 ] 127.0.0.1 /admin/Customer/loadMoCustomer?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM customer C WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT C.*,S.CtmStatusName,K.CtmRankName,R.CtmRoleName FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID  WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 0,10   [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+

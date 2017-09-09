@@ -1,0 +1,57 @@
+<extend name="Public/common" />
+<block name="style">
+    <link rel="stylesheet" href="/public/Admin/css/summernote.css">
+    <link rel="stylesheet" href="/public/Admin/css/summernote-bs3.css">
+</block>
+<block name="body">
+    <div class="ibox float-e-margins">
+        <input id="Birthday" name="Birthday" class="laydate-icon">
+        <input id="Birthday2" name="Birthday" class="laydate-icon">
+        <th>属性图片</th>
+        <td>
+            <input type="hidden" id="AttrImage" name="AttrImage" value="{$info.AttrImage}" />
+            <img src="{$info.AttrImage|default='__PUBLIC__/no_photo.png'}"  id="photo_preview"  style="height:60px"/>
+            <div style="padding: 5px 0 0 0;">
+                <a href="javascript:void(0)" class="easyui-linkbutton" id="btn-upload" data-options="iconCls:'icon-upload'">上传</a>
+            </div>
+        </td>
+        <div class="summernote"><p>Hello World</p></div>
+        <button type="button" class="btn btn-default"  id="close">关闭</button>
+        <button type="button" class="btn btn-primary" id="submit">保存</button>
+    </div>
+</block>
+<block name="script">
+    <script type="text/javascript" src="__PUBLIC__/Static/uploadify/jquery.uploadify.min.js"></script>
+    <script type="text/javascript">
+        laydate({elem: '#Birthday',istime: true,format: 'YYYY-MM-DD hh:mm:ss'});
+        laydate({elem: '#Birthday2',istime: true,format: 'YYYY-MM-DD hh:mm:ss'});
+        $(function () {
+            //设置图片上传插件
+            $("#btn-upload").uploadify({
+                height: 25,
+                swf: '/public/Static/uploadify/uploadify.swf',
+                uploader: "{:U('File/uploadPicture',array('session_id'=>session_id()))}",
+                width: 80,
+                buttonClass: "l-btn",
+                buttonText: $("#btn-upload").text(),
+                onUploadSuccess: function (file, data, response) {
+                    data = $.parseJSON(data);
+                    if (data.status) {
+                        $("#photo_preview").attr("src", data.data);
+                        $("#AttrImage").val(data.data);
+                    }
+                    else {
+                        show_alert(data.info);
+                    }
+                }
+            });
+            $(".summernote").summernote({lang:"zh-CN"});
+        });
+        $("#close").click(function(){
+            history.go(-1);
+        });
+        $("#submit").click(function(){
+            location.href="/admin/Huge/";
+        })
+    </script>
+</block>

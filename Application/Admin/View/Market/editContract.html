@@ -1,0 +1,162 @@
+<extend name="Public/base"/>
+<block name="body">
+    <form class="form-main" id="form-main" action="">
+        <input type="hidden" name="id" value="{$info.ContractID}" />
+        <table class="form-table" border="0">
+            <tr>
+                <th width="100px"><i class="required"></i>客户</th>
+                <td width="210px">
+                    <select name="Identifier" class="form-control">
+                        <volist name="cInfo" id="c">
+                            <option value="{$c.Identifier}" <if condition="$info['Identifier'] eq $c['Identifier']">selected</if> >
+                            {$c.FullName}
+                            </option>
+                        </volist>
+                    </select>
+                </td>
+                <th>合同类型</th>
+                <td>
+                    <select name="CttTypeID" class="form-control">
+                        <volist name="ttInfo" id="t">
+                            <option value="{$t.CttTypeID}" <if condition="$info['CttTypeID'] eq $t['CttTypeID']">selected</if> >
+                            {$t.CttTypeName}
+                            </option>
+                        </volist>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <th>合同编号</th>
+                <td>
+                    <input class="form-control" name="CttNumber" value="{$info.CttNumber}" style="width:120px;">
+                </td>
+                <th>购买产品</th>
+                <td>
+                    <select name="CttProductID" class="form-control">
+                        <volist name="product" id="p">
+                            <option value="{$p.ProductID}" <if condition="$info['CttProductID'] eq $p['ProductID']">selected</if> >
+                            {$p.ProductName}
+                            </option>
+                        </volist>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>对方负责人</th>
+                <td>
+                    <input class="form-control" name="CtmPrincipal" value="{$info.CtmPrincipal}" style="width:120px;">
+                </td>
+                <th>我方负责人</th>
+                <td>
+                    <input class="form-control" name="OwnPrincipal" value="{$info.OwnPrincipal}" style="width:120px;">
+                </td>
+            </tr>
+            <tr>
+                <th>对方签约人</th>
+                <td>
+                    <input class="form-control" name="CtmSign" value="{$info.CtmSign}" style="width:120px;">
+
+                </td>
+
+                <th>我方签约人</th>
+                <td>
+                    <input class="form-control" name="OwnSign" value="{$info.OwnSign}" style="width:120px;">
+                </td>
+            </tr>
+            <tr>
+                <th>总金额</th>
+                <td>
+                    <input class="form-control" name="Amount" value="{$info.Amount}" style="width:120px;">
+                </td>
+                <th>维护费用</th>
+                <td>
+                    <input class="form-control" name="Charge" value="{$info.Charge}" style="width:120px;">
+                </td>
+            </tr>
+            <tr>
+                <th>签约时间</th>
+                <td>
+
+                    <input class="form-control form-control-datetime" name="SignTime" value="{$info.SignTime}" style="width:120px;">
+                </td>
+                <th>合同扫描件</th>
+                <td>
+                    <input class="form-control" name="ScanID" value="{$info.ScanID}" style="width:120px;">
+                </td>
+            </tr>
+
+            <tr>
+                <th>生效时间</th>
+                <td>
+                    <input class="form-control form-control-datetime" name="BeginTime" value="{$info.BeginTime}" style="width:120px;">
+                </td>
+                <th>结束时间</th>
+                <td>
+                    <input class="form-control form-control-datetime" name="FinishTime" value="{$info.FinishTime}" style="width:120px;">
+                </td>
+            </tr>
+            <tr>
+                <th>支付方式</th>
+                <td colspan="3">
+                    <select name="PayTypeID" class="form-control">
+                        <volist name="pay" id="a">
+                            <option value="{$a.PayID}" <if condition="$info['PayTypeID'] eq $a['PayID']">selected</if> >
+                            {$a.PayName}
+                            </option>
+                        </volist>
+                    </select>
+                </td>
+
+            </tr>
+
+            <tr>
+                <th>合同说明</th>
+                <td colspan="3">
+                    <input class="form-control" name="Introduce" value="{$info.Introduce}" style="width:500px;">
+                </td>
+
+            </tr>
+        </table>
+    </form>
+    <div class="dialog-button-container">
+        <div id="dlg-buttons" class="dialog-button">
+            <input type="hidden" id="type" value="{$type}">
+            <a href="javascript:doSubmit()" class="easyui-linkbutton c6" iconcls="icon-ok" style="width: 90px">提交</a>
+            <a href="javascript:top.closeModal()" class="easyui-linkbutton" iconcls="icon-cancel" style="width: 90px">取消</a>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script type="text/javascript" src='__PUBLIC__/Static/My97DatePicker/WdatePicker.js'></script>
+<script>
+
+    var form_validate = $("#form-main").validate(
+            {
+                rules: {
+                    Sort: { digits: true },
+                    LoginName: { required: true},
+                }
+                , messages: {
+                //name:'活动名称不能为空',
+                //intro:'活动简介不能为空'
+                Sort:'输入整数'
+                }
+            });
+    //提交表单
+    function doSubmit() {
+        var form_data = $("#form-main").serializeArray();
+        //form_data.push({name:"Remark",value:$("#ReMark").val()});
+        //前台验证
+        if (form_validate.form()) {
+            $.post("{$self}", form_data, function (data) {
+                show_alert(data.info);
+                if (data.status == 1) {
+                    if($("#type").val()=="add")show_alert("该用户的初始密码为："+data.url);
+                    top.closeModal();
+                }
+            }, 'json');
+        }
+    };
+</script>
+</block>

@@ -1,0 +1,128 @@
+<extend name="Public/base"/>
+<block name="body">
+    <form class="form-main" id="form-main" action="">
+        <input type="hidden" name="id" value="{$Info.OrderID}" />
+        <table class="form-table" border="0">
+            <tr>
+                <th>客户</th>
+                <td>
+                    <select name="CustomerID" class="form-control">
+                        <volist name="cInfo" id="c">
+                            <option value="{$c.CustomerID}" <if condition="$c['CustomerID'] eq $Info['CustomerID']">selected</if>>
+                                {$c.FullName}
+                            </option>
+                        </volist>
+                    </select>
+                </td>
+
+            </tr>
+            <tr>
+                <th>选择产品</th>
+                <td>
+                    <select name="ProductID" class="form-control">
+                        <volist name="product" id="p">
+                            <option value="{$p.ProductID}" <if condition="$p['ProductID'] eq $Info['ProductID']">selected</if>>
+                            {$p.ProductName}
+                            </option>
+                        </volist>
+                    </select>
+                </td>
+
+            </tr>
+            <tr>
+                <th>付款状态</th>
+                <td>
+                    <input type="radio" name="Status" value="0" checked >未付款
+                    <input type="radio" name="Status" value="1" <if condition="$Info['Status'] eq 1">checked</if> >已付款
+                </td>
+
+            </tr>
+            <tr>
+                <th>付款金额</th>
+                <td>
+                    <input class="form-control" name="Amount" value="{$Info.Amount}" style="width:120px;">
+                </td>
+
+            </tr>
+            <tr>
+                <th>支付方式</th>
+                <td>
+
+                    <select name="PayType" class="form-control">
+                        <volist name="paytype" id="pt">
+                            <option value="{$pt.PayID}" <if condition="$pt['PayID'] eq $Info['paytype']">selected</if>>
+                            {$pt.PayName}
+                            </option>
+                        </volist>
+                    </select>
+                </td>
+
+            </tr>
+            <tr>
+                <th>收款人</th>
+                <td>
+                    <input class="form-control" name="Receipt" value="{$Info.Receipt}" style="width:120px;">
+                </td>
+
+            </tr>
+            <tr>
+                <th>开始时间</th>
+                <td>
+                    <input class="form-control form-control-datetime" name="BeginTime" value="{$Info.BeginTime}" style="width:120px;">
+                </td>
+
+            </tr>
+            <tr>
+                <th>到期时间</th>
+                <td>
+                    <input class="form-control form-control-datetime" name="FinishTime" value="{$Info.FinishTime}" style="width:120px;">
+                </td>
+            </tr>
+            <tr>
+                <th>备注</th>
+                <td>
+                    <input class="form-control" name="Note" value="{$Info.Note}" style="width:120px;">
+                </td>
+
+            </tr>
+
+        </table>
+    </form>
+    <div class="dialog-button-container">
+        <div id="dlg-buttons" class="dialog-button">
+            <a href="javascript:doSubmit()" class="easyui-linkbutton c6" iconcls="icon-ok" style="width: 90px">提交</a>
+            <a href="javascript:top.closeModal()" class="easyui-linkbutton" iconcls="icon-cancel" style="width: 90px">取消</a>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script type="text/javascript" src='__PUBLIC__/Static/My97DatePicker/WdatePicker.js'></script>
+<script>
+    var form_validate = $("#form-main").validate(
+            {
+                rules: {
+                    Sort: { digits: true },
+                    Content: { required: true},
+                }
+                , messages: {
+                //name:'活动名称不能为空',
+                //intro:'活动简介不能为空'
+                Sort:'输入整数'
+                }
+            });
+    //提交表单
+    function doSubmit() {
+        var form_data = $("#form-main").serializeArray();
+        //form_data.push({name:"Remark",value:$("#ReMark").val()});
+        //前台验证
+        if (form_validate.form()) {
+            $.post("{$self}", form_data, function (data) {
+                show_alert(data.info);
+                if (data.status == 1) {
+                    top.closeModal();
+                }
+            }, 'json');
+        }
+    };
+</script>
+</block>

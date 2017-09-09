@@ -1,0 +1,226 @@
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h4 class="modal-title" id="myModalLabel"><empty name="Think.get.id">新增<else /> 编辑</empty>合同信息</h4>
+</div>
+<div class="modal-body">
+    <form class="form-horizontal" role="form" id="defaultForm" method="post" action="{$self}">
+        <input type="hidden" name="id" value="{$info.ContractID}" />
+        <fieldset>
+            <div class="form-group">
+                <label class="col-sm-2 control-label" >客户</label>
+                <div class="col-sm-4">
+                    {:parse_dropdownlist($info[Identifier],$cInfo,"Identifier","Identifier","form-control","请选择客户")}
+                </div>
+                <label class="col-sm-2 control-label" >购买产品</label>
+                <div class="col-sm-4">
+                    {:parse_dropdownlist($info[CttProductID],$product,"CttProductID","CttProductID","form-control","请选择产品")}
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label" >合同类型</label>
+                <div class="col-sm-4">
+                    {:parse_dropdownlist($info[CttTypeID],$ttInfo,"CttTypeID","CttTypeID","form-control","请选择合同类型")}
+                </div>
+                <label class="col-sm-2 control-label" >支付方式</label>
+                <div class="col-sm-4">
+                    {:parse_dropdownlist($info[PayTypeID],$pay,"PayTypeID","PayTypeID","form-control","请选择支付方式")}
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="CttNumber">合同编号</label>
+                <div class="col-sm-4">
+                    <input class="form-control" id="CttNumber" type="text" name="CttNumber" value="{$info.CttNumber}"/>
+                </div>
+                <label class="col-sm-2 control-label" for="Amount">总金额</label>
+                <div class="col-sm-4">
+                    <input class="form-control" id="Amount" type="text" name="Amount" value="{$info.Amount}"/>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="CtmPrincipal">对方负责人</label>
+                <div class="col-sm-4">
+                    <input class="form-control" id="CtmPrincipal" name="CtmPrincipal"  value="{$info.CtmPrincipal}" type="text" />
+                </div>
+                <label class="col-sm-2 control-label" for="OwnPrincipal">我方负责人</label>
+                <div class="col-sm-4">
+                    <input class="form-control" id="OwnPrincipal" name="OwnPrincipal"  value="{$info.OwnPrincipal}" type="text" />
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="CtmSign">对方签约人</label>
+                <div class="col-sm-4">
+                    <input class="form-control" id="CtmSign" name="CtmSign"  value="{$info.CtmSign}" type="text" />
+                </div>
+                <label class="col-sm-2 control-label" for="OwnSign">我方签约人</label>
+                <div class="col-sm-4">
+                    <input class="form-control" id="OwnSign" name="OwnSign"  value="{$info.OwnSign}" type="text" />
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="Charge">维护费用</label>
+                <div class="col-sm-4">
+                    <input class="form-control" id="Charge" name="Charge"  value="{$info.Charge}" type="text" />
+                </div>
+                <label class="col-sm-2 control-label" for="SignTime">签约时间</label>
+                <div class="col-sm-4">
+                    <input class="form-control" id="SignTime" name="SignTime"  value="{$info.SignTime}" type="text" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="BeginTime">生效时间</label>
+                <div class="col-sm-4">
+                    <input class="form-control" id="BeginTime" name="BeginTime"  value="{$info.BeginTime}" type="text" />
+                </div>
+                <label class="col-sm-2 control-label" for="FinishTime">结束时间</label>
+                <div class="col-sm-4">
+                    <input class="form-control" id="FinishTime" name="FinishTime"  value="{$info.FinishTime}" type="text" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="ScanID">合同扫描件</label>
+                <div class="col-sm-4">
+                    <input type="hidden" id="ScanID" name="ScanID" value="{$info.ScanID}" />
+                    <img src="{$info.ScanID|default='__PUBLIC__/no_photo.png'}"  id="photo_preview"  style="height:60px"/>
+                    <div style="padding: 5px 0 0 0;">
+                        <a href="javascript:void(0)" class="btn btn-default" id="btn-upload" data-options="iconCls:'icon-upload'">上传</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label" for="Introduce">合同说明</label>
+                <div class="col-sm-10">
+                    <!--
+                    <input class="form-control" id="Introduce" name="Introduce"  value="{$info.Introduce}" type="text" />
+                    -->
+                    <div class="summernote" id="Introduce" name="Introduce"></div>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal" id="close">关闭</button>
+    <button type="button" class="btn btn-primary" id="submit">保存</button>
+</div>
+<script type="text/javascript">
+    $("#submit").click(function(){
+        $("#defaultForm").submit();
+    });
+    laydate({elem: '#SignTime', format: 'YYYY-MM-DD hh:mm:ss',event: 'focus'});
+    laydate({elem: '#FinishTime', format: 'YYYY-MM-DD hh:mm:ss', event: 'focus'});
+    laydate({elem: '#BeginTime', format: 'YYYY-MM-DD hh:mm:ss', event: 'focus'});
+    $(function () {
+        //设置图片上传插件
+        $("#btn-upload").uploadify({
+            height: 25,
+            swf: '/public/Static/uploadify/uploadify.swf',
+            uploader: "{:U('File/uploadPicture',array('session_id'=>session_id()))}",
+            width: 80,
+            buttonClass: "l-btn",
+            buttonText: $("#btn-upload").text(),
+            onUploadSuccess: function (file, data, response) {
+                data = $.parseJSON(data);
+                if (data.status) {
+                    $("#photo_preview").attr("src", data.data);
+                    $("#AttrImage").val(data.data);
+                }
+                else {
+                    show_alert(data.info);
+                }
+            }
+        });
+        $(".summernote").summernote({lang:"zh-CN"});
+
+    });
+    $(document).ready(function() {
+        loadSomething();
+        $('#defaultForm')
+                .bootstrapValidator({
+                    message: 'This value is not valid',
+                    feedbackIcons: {
+                        valid: 'glyphicon glyphicon-ok',
+                        invalid: 'glyphicon glyphicon-remove',
+                        validating: 'glyphicon glyphicon-refresh'
+                    },
+                    fields: {
+                        LoginName: {
+                            message: '账号不可用',
+                            validators: {
+                                notEmpty: {
+                                    message: '账号不能为空'
+                                },
+                                stringLength: {
+                                    min: 6,
+                                    max: 30,
+                                    message: '账号长度6-30'
+                                },
+                                /*remote: {
+                                 url: 'remote.php',
+                                 message: '账号不可用'
+                                 },*/
+                                regexp: {
+                                    regexp: /^[a-zA-Z0-9_\.]+$/,
+                                    message: '账号格式不正确'
+                                }
+                            }
+                        }
+                    }
+                })
+                .on('success.form.bv', function(e) {
+                    // Prevent form submission
+                    e.preventDefault();
+                    // Get the form instance
+                    var $form = $(e.target);
+                    // Get the BootstrapValidator instance
+                    var bv = $form.data('bootstrapValidator');
+                    // Use Ajax to submit form data
+                    $.post($form.attr('action'), $form.serialize(), function(result) {
+                        if(result.status==1){
+                            swal({
+                                title:"操作成功！",
+                                text:result.info,
+                                type:"success"
+                            },function(){
+                                $('#defaultForm').bootstrapValidator('resetForm', true);$('input').val('');$('#addCustomer').modal('hide');
+                            });
+                        }else{
+                            toastr.warning(result.info);return false;
+                        }
+                    }, 'json');
+                });
+    });
+    function loadSomething(){
+        //设置图片上传插件
+        $("#btn-upload").uploadify({
+            height: 25,
+            swf: '/public/Static/uploadify/uploadify.swf',
+            uploader: "{:U('File/uploadPicture',array('session_id'=>session_id()))}",
+            width: 80,
+            buttonClass: "btn-default",
+            buttonText: $("#btn-upload").text(),
+            onUploadSuccess: function (file, data, response) {
+                data = $.parseJSON(data);
+                if (data.status) {
+                    $("#photo_preview").attr("src", data.data);
+                    $("#ScanID").val(data.data);
+                }
+                else {
+                    show_alert(data.info);
+                }
+            }
+        });
+        $(".summernote").summernote({lang:"zh-CN"});
+        laydate({elem: '#SignTime', format: 'YYYY-MM-DD hh:mm:ss',event: 'focus'});
+        laydate({elem: '#FinishTime', format: 'YYYY-MM-DD hh:mm:ss', event: 'focus'});
+        laydate({elem: '#BeginTime', format: 'YYYY-MM-DD hh:mm:ss', event: 'focus'});
+    }
+</script>

@@ -1,0 +1,49 @@
+<extend name="Public/common" />
+<block name="body">
+    <link type="text/css" rel="stylesheet" href="/Public/Admin/css/timeline.css"/>
+    <!-- BEGIN TIMELINE 1-->
+    <ul class="flik-timeline flik-timeline-1" data-scroll-effect="default-effect">
+        <volist name="feedback_list" id="vo">
+            <li class="event" data-date="{$key}">
+                <volist name="vo" id="sub_vo">
+                    <h3 class="h3-{$sub_vo.FbStatusID} {$sub_vo.css_class} mod" style="cursor:pointer" type="{$sub_vo.FeedbackID}">{$sub_vo.Title} 《{$sub_vo.ShortName}》</h3>
+                    <div style="border-bottom: #ccc 1px dotted">
+                        <p  class="event-content" data-date="{$key}">
+                            {$sub_vo.Description|htmlspecialchars_decode}
+                        </p>
+                    </div>
+                </volist>
+            </li>
+        </volist>
+    </ul>
+
+
+</block>
+<block name="modal">
+    <div class="modal fade" id="addCustomer" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+            </div>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script>
+        var $confirm = $('.mod');
+        function initTable() {
+            $confirm.click(function(){
+                var ids = $(this).attr('type');
+                $("#addCustomer").modal({
+                    remote: "/admin/Customer/confirmDemand?id=" + ids+'&t=' + Math.random(1000)
+                });
+            })
+        }
+        $(function () {
+            $("#addCustomer").on("hidden.bs.modal", function() {
+                location.reload();
+            });
+            eachSeries(getScript, initTable);
+        });
+    </script>
+</block>

@@ -1,0 +1,117 @@
+<extend name="Public/common" />
+<block name="style">
+
+    <link rel="stylesheet" href="/public/Admin/css/summernote.css">
+    <link rel="stylesheet" href="/public/Admin/css/summernote-bs3.css">
+</block>
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content no-padding">
+
+                    <input id="Birthday" name="Birthday" class="laydate-icon">
+                    <input id="Birthday2" name="Birthday" class="laydate-icon">
+                    <th>属性图片</th>
+                    <td>
+                        <input type="hidden" id="AttrImage" name="AttrImage" value="{$info.AttrImage}" />
+                        <a href="" class="J_menuItem"><img src="{$info.AttrImage|default='__PUBLIC__/no_photo.png'}"  id="photo_preview"  style="height:60px"/></a>
+                        <div style="padding: 5px 0 0 0;">
+                            <a href="javascript:void(0)" class="easyui-linkbutton" id="btn-upload" data-options="iconCls:'icon-upload'">上传</a>
+                        </div>
+                    </td>
+                    <div class="summernote"><p>Hello World</p></div>
+                    <a class="btn btn-success" data-toggle="modal" data-target="#addCustomer" data-remote="/admin/Huge/modal" >
+                        新增
+                    </a>
+                    <a class="J_menuItem" href="/admin/Huge/modal" data-index="0">客户信息</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>Wyswig Summernote 富文本编辑器</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="form_editors.html#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="form_editors.html#">选项1</a>
+                            </li>
+                            <li><a href="form_editors.html#">选项2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content no-padding">
+
+                    <div class="summernote">
+
+
+                    </div>
+<a id="test">test</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</block>
+<block name="modal">
+    <div class="modal fade" id="addCustomer" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+            </div>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script type="text/javascript" src="/public/Static/uploadify/jquery.uploadify.min.js"></script>
+    <script type="text/javascript">
+        laydate({elem: '#Birthday',istime: true,format: 'YYYY-MM-DD hh:mm:ss'});
+        laydate({elem: '#Birthday2',istime: true,format: 'YYYY-MM-DD hh:mm:ss'});
+        $(function () {
+            //设置图片上传插件
+            $("#btn-upload").uploadify({
+                height: 25,
+                swf: '/public/Static/uploadify/uploadify.swf',
+                uploader: "{:U('File/uploadPicture',array('session_id'=>session_id()))}",
+                width: 80,
+                buttonClass: "l-btn",
+                buttonText: $("#btn-upload").text(),
+                onUploadSuccess: function (file, data, response) {
+                    data = $.parseJSON(data);
+                    if (data.status) {
+                        $("#photo_preview").attr("src", data.data);
+                        $("#AttrImage").val(data.data);
+                    }
+                    else {
+                        show_alert(data.info);
+                    }
+                }
+            });
+            $(".summernote").summernote({lang:"zh-CN"});
+            $(".modal-backdrop").hide();
+        });
+        $(function () {
+
+            $('#addCustomer').on('hide.bs.modal', function () {
+                $(this).removeData("bs.modal");
+
+            });
+        });
+        $("#test").click(function(){
+            var sHTML = $('.summernote').code();alert(sHTML);
+        })
+    </script>
+</block>

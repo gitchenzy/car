@@ -1,0 +1,158 @@
+<extend name="Public/base"/>
+<block name="body">
+    <form class="form-main" id="form-main" action="">
+        <input type="hidden" name="id" value="{$info.CustomerID}" />
+        <table class="form-table" border="0">
+            <tr>
+                <th width="100px"><i class="required"></i>账号</th>
+                <td width="210px">
+                    <input class="form-control" name="LoginName" value="{$info.LoginName}" style="width:120px;"<notempty name="info.LoginName">disabled='disabled'</notempty> >
+                </td>
+                <th>网址</th>
+                <td>
+                    <input class="form-control" name="Website" value="{$info.Website}" style="width:120px;">
+                </td>
+            </tr>
+
+            <tr>
+                <th>简称</th>
+                <td>
+                    <input class="form-control" name="ShortName" value="{$info.ShortName}" style="width:120px;">
+                </td>
+                <th>全称</th>
+                <td>
+                    <input class="form-control" name="FullName" value="{$info.FullName}" style="width:120px;">
+                </td>
+            </tr>
+            <tr>
+                <th>微信号</th>
+                <td>
+                    <input class="form-control" name="WeChat" value="{$info.WeChat}" style="width:120px;">
+                </td>
+            </tr>
+            <tr>
+                <th>联系人角色</th>
+                <td>
+                    <select name="CtmRoleID" class="form-control">
+                        <volist name="cus.cr" id="r">
+                            <option value="{$r.CtmRoleID}" <if condition="$info['CtmRoleID'] eq $r['CtmRoleID']">selected</if> >
+                            {$r.CtmRoleName}
+                            </option>
+                        </volist>
+                    </select>
+                </td>
+
+                <th>亲密程度</th>
+                <td>
+                    <select name="CtmCloseID" class="form-control">
+                        <volist name="cus.co" id="o">
+                            <option value="{$o.CtmCloseID}" <if condition="$info['CtmCloseID'] eq $o['CtmCloseID']">selected</if> >
+                            {$o.CtmCloseName}
+                            </option>
+                        </volist>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>客户状态</th>
+                <td>
+
+                    <select name="CtmStatusID" class="form-control">
+                        <volist name="cus.cs" id="s">
+                            <option value="{$s.CtmStatusID}" <if condition="$info['CtmStatusID'] eq $s['CtmStatusID']">selected</if> >
+                            {$s.CtmStatusName}
+                            </option>
+                        </volist>
+                    </select>
+                </td>
+                <th>客户等级</th>
+                <td>
+                    <select name="CtmRankID" class="form-control">
+                        <volist name="cus.ck" id="k">
+                            <option value="{$k.CtmRankID}" <if condition="$info['CtmRankID'] eq $k['CtmRankID']">selected</if> >
+                            {$k.CtmRankName}
+                            </option>
+                        </volist>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>联系人</th>
+                <td>
+                    <input class="form-control" name="Contacter" value="{$info.Contacter}" style="width:120px;">
+                </td>
+                <th>邮箱</th>
+                <td>
+                    <input class="form-control" name="Email" value="{$info.Email}" style="width:120px;">
+                </td>
+            </tr>
+            <tr>
+                <th>手机</th>
+                <td>
+                    <input class="form-control" name="Mobile" value="{$info.Mobile}" style="width:120px;">
+                </td>
+                <th>联系电话</th>
+                <td>
+                    <input class="form-control" name="Telephone" value="{$info.Telephone}" style="width:120px;">
+                </td>
+            </tr>
+
+            <tr>
+                <th>排序</th>
+                <td>
+                    <input class="form-control" name="Sort" value="{$info.Sort}" style="width:120px;">
+                </td>
+                <th>账号状态</th>
+                <td>
+                    <label><input  name="Status" type="radio" value="0" checked="checked"<if condition="$info['Status'] eq 0">checked="checked"</if> /> 正常</label>
+                    <label><input  name="Status" type="radio" value="1" <if condition="$info['Status'] eq 1">checked="checked"</if> /> 锁定</label>
+                </td>
+            </tr>
+            <tr>
+                <th>地址</th>
+                <td colspan="3">
+                    <input class="form-control" name="Address" value="{$info.Address}" style="width:500px;">
+                </td>
+
+            </tr>
+        </table>
+    </form>
+    <div class="dialog-button-container">
+        <div id="dlg-buttons" class="dialog-button">
+            <input type="hidden" id="type" value="{$type}">
+            <a href="javascript:doSubmit()" class="easyui-linkbutton c6" iconcls="icon-ok" style="width: 90px">提交</a>
+            <a href="javascript:top.closeModal()" class="easyui-linkbutton" iconcls="icon-cancel" style="width: 90px">取消</a>
+        </div>
+    </div>
+</block>
+<block name="script">
+<script>
+    var form_validate = $("#form-main").validate(
+            {
+                rules: {
+                    Sort: { digits: true },
+                    LoginName: { required: true},
+                }
+                , messages: {
+                //name:'活动名称不能为空',
+                //intro:'活动简介不能为空'
+                Sort:'输入整数'
+                }
+            });
+    //提交表单
+    function doSubmit() {
+        var form_data = $("#form-main").serializeArray();
+        //form_data.push({name:"Remark",value:$("#ReMark").val()});
+        //前台验证
+        if (form_validate.form()) {
+            $.post("{$self}", form_data, function (data) {
+                show_alert(data.info);
+                if (data.status == 1) {
+                    if($("#type").val()=="add")show_alert("该用户的初始密码为："+data.url);
+                    top.closeModal();
+                }
+            }, 'json');
+        }
+    };
+</script>
+</block>

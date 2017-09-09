@@ -1,0 +1,113 @@
+<extend name="Public/common" />
+<block name="body">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="col-sm-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">合同信息</div>
+                    <div class="ibox-content">
+                        <div class="vertical-container dark-timeline type2">
+                            <table border="1" class="table table-striped">
+                                <tr><td>生效时间</td><td>{$pinfo.BeginTime}</td></tr>
+                                <tr><td>结束时间</td><td>{$pinfo.FinishTime}</td></tr>
+                                <tr><td>对接人</td><td>{$pinfo.CtmSign}</td></tr>
+                                <tr><td>联系电话</td><td>{$pinfo.Telephone}</td></tr>
+                                <tr><td>购买产品</td><td>{$pinfo.PName}</td></tr>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">申请实施信息</div>
+                    <div class="ibox-content">
+                        <div class="vertical-container dark-timeline type3">
+                            <table border="1" class="table table-striped">
+                                <tr><td>市场人员</td><td>{$info.MName}</td></tr>
+                                <tr><td>客服人员</td><td>{$info.SName}</td></tr>
+                                <tr><td>实施状态</td><td>{$info.StatusName}</td></tr>
+                                <tr><td>实施主管</td><td>{$info.EName}</td></tr>
+                                <tr><td>实施人员</td><td>{$info.FName}</td></tr>
+                                <tr><td>实施时间</td><td>{$info.ForceTime}</td></tr>
+                                <tr><td>实施超时时间</td><td>{$info.OutForceTime}</td></tr>
+                                <tr><td>实施完成时间</td><td>{$info.FinishTime}</td></tr>
+                                <tr><td>备注</td><td>{$info.Note}</td></tr>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">实施信息</div>
+                    <div class="ibox-content">
+                        <div class="vertical-container dark-timeline type2">
+                            <volist name="main_info" id="mainfo">
+                                <div class="vertical-timeline-block">
+                                    <div class="vertical-timeline-icon blue-bg">
+                                        <i class="fa fa-file-text"></i>
+                                    </div>
+
+                                    <div class="vertical-timeline-content">
+                                        <h2>{$mainfo.Result}</h2>
+                                        <p>
+                                            {$mainfo.Content}
+                                        </p>
+                                                <span class="vertical-date">
+                                            实施人:{$mainfo.EmpName}  <br>
+                                            <small>{$mainfo.TraceTime}</small>
+                                        </span>
+                                    </div>
+                                </div>
+                            </volist>
+                        </div>
+                        <div class="spiner-example loadingB" style="display:none;">
+                            <div class="sk-spinner sk-spinner-chasing-dots">
+                                <div class="sk-dot1"></div>
+                                <div class="sk-dot2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script type="text/javascript">
+        var current_loading = false;
+        var page_container_object =  $("body").get(0);
+        var time=1;
+        $(window).scroll(function(){
+            var scroll_interval = page_container_object.scrollHeight - page_container_object.scrollTop - page_container_object.clientHeight;
+            if (scroll_interval <= 100 && !current_loading) {
+                current_loading = true;
+                $(".loadingA").add(".loadingB").add(".loadingC").show();
+                loadMore(time,1);
+                 loadMore(time,2);
+                  loadMore(time,3);
+            }
+
+        });
+
+        //"向服务器请求数据"
+        function loadMore(te,type) {
+            var id = "{$Think.get.id}";
+            $.get("/admin/Customer/loadMoreCusInfo/",{ time : te,type:type,id:id } , function(data) {
+                if(data.status==0){
+                    $(".loadingA").add(".loadingB").add(".loadingC").hide();
+
+                }else{
+                    $(".type" + type).append(data.info);
+                    current_loading =false;
+                    time++;
+                }
+            });
+        }
+    </script>
+</block>

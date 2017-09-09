@@ -1,0 +1,106 @@
+<extend name="Public/base"/>
+<block name="body">
+    <form class="form-main" id="form-main" action="">
+        <input type="hidden" name="id" value="{$info.FeedbackID}">
+        <table class="form-table" border="0">
+            <tr>
+                <th>问题类型</th>
+                <td>
+                    {$info.type}
+                </td>
+
+            </tr>
+
+            <tr>
+                <th>客户</th>
+                <td>
+                    {$info.customerName}
+                </td>
+
+            </tr>
+
+            <tr>
+                <th>问题标题</th>
+                <td>
+                    {$info.Title}
+                </td>
+
+            </tr>
+            <tr>
+                <th>问题描述</th>
+                <td>
+                    {$info.Description}
+                </td>
+
+            </tr>
+            <tr>
+                <th>优先级别</th>
+                <td>
+                    {$info.FbPriorityName}
+                </td>
+            </tr>
+            <tr>
+                <th>问题备注</th>
+                <td>
+                    {$info.Note}
+                </td>
+            </tr>
+            <tr>
+                <th>解决状态</th>
+                <td>
+                    <select name="FbStatusID" class="form-control">
+                        <volist name="tInfo" id="t">
+                            <option value="{$t.FbStatusID}">
+                                {$t.FbStatusName}
+                            </option>
+                        </volist>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <th>计划解决时间</th>
+                <td>
+                    <input class="form-control form-control-datetime" name="PlanTime" style="width:240px;">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div class="dialog-button-container">
+        <div id="dlg-buttons" class="dialog-button">
+            <a href="javascript:doSubmit()" class="easyui-linkbutton c6" iconcls="icon-ok" style="width: 90px">领取</a>
+            <a href="javascript:top.closeModal()" class="easyui-linkbutton" iconcls="icon-cancel" style="width: 90px">取消</a>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script type="text/javascript" src='__PUBLIC__/Static/My97DatePicker/WdatePicker.js'></script>
+    <script>
+        var form_validate = $("#form-main").validate(
+                {
+                    rules: {
+                        Sort: { digits: true },
+                        Content: { required: true},
+                    }
+                    , messages: {
+                    //name:'活动名称不能为空',
+                    //intro:'活动简介不能为空'
+                    Sort:'输入整数'
+                }
+                });
+        //提交表单
+        function doSubmit() {
+            var form_data = $("#form-main").serializeArray();
+            //form_data.push({name:"Remark",value:$("#ReMark").val()});
+            //前台验证
+            if (form_validate.form()) {
+                $.post("{$self}", form_data, function (data) {
+                    show_alert(data.info);
+                    if (data.status == 1) {
+                        top.closeModal();
+                    }
+                }, 'json');
+            }
+        };
+    </script>
+</block>

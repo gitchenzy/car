@@ -1,0 +1,67 @@
+<extend name="Public/base"/>
+<block name="body">
+    <form class="form-main" id="form-main" action="">
+        <input type="hidden" name="id" value="{$mInfo.RuleID}" />
+        <table class="form-table" border="0">
+            <tr>
+                <th>规则名称</th>
+                <td>
+                    <input class="form-control" name="RuleName" value="{$mInfo.RuleName}" style="width:120px;">
+                </td>
+
+            </tr>
+            <tr>
+                <th>规则类型</th>
+                <td>
+                    <input type="radio" name="RuleType" checked value="1">交易额
+                    <input type="radio" <if condition="$mInfo['RuleType'] eq 2">checked</if> name="RuleType" value="2">销售数量
+                </td>
+
+            </tr>
+            <tr>
+                <th>规则条件</th>
+                <td>
+                    <input class="form-control" name="Rule" value="{$mInfo.Rule}" style="width:120px;">
+                </td>
+
+            </tr>
+
+        </table>
+    </form>
+    <div class="dialog-button-container">
+        <div id="dlg-buttons" class="dialog-button">
+            <a href="javascript:doSubmit()" class="easyui-linkbutton c6" iconcls="icon-ok" style="width: 90px">提交</a>
+            <a href="javascript:top.closeModal()" class="easyui-linkbutton" iconcls="icon-cancel" style="width: 90px">取消</a>
+        </div>
+    </div>
+</block>
+<block name="script">
+<script>
+    var form_validate = $("#form-main").validate(
+            {
+                rules: {
+                    Sort: { digits: true },
+                    Content: { required: true},
+                }
+                , messages: {
+                //name:'活动名称不能为空',
+                //intro:'活动简介不能为空'
+                Sort:'输入整数'
+                }
+            });
+    //提交表单
+    function doSubmit() {
+        var form_data = $("#form-main").serializeArray();
+        //form_data.push({name:"Remark",value:$("#ReMark").val()});
+        //前台验证
+        if (form_validate.form()) {
+            $.post("{$self}", form_data, function (data) {
+                show_alert(data.info);
+                if (data.status == 1) {
+                    top.closeModal();
+                }
+            }, 'json');
+        }
+    };
+</script>
+</block>

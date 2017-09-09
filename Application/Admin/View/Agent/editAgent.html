@@ -1,0 +1,116 @@
+<extend name="Public/base"/>
+<block name="body">
+    <form class="form-main" id="form-main" action="">
+        <input type="hidden" name="id" value="{$info.AgentID}" />
+        <table class="form-table" border="0">
+            <tr>
+                <th width="100px"><i class="required"></i>账号</th>
+                <td width="210px">
+                    <input class="form-control" name="LoginName" value="{$info.LoginName}" style="width:120px;"<notempty name="info.LoginName">disabled='disabled'</notempty> >
+                </td>
+                <th>公司名称</th>
+                <td>
+                    <input class="form-control" name="CompanyName" value="{$info.CompanyName}" style="width:120px;">
+                </td>
+            </tr>
+
+            <tr>
+                <th>负责人</th>
+                <td>
+                    <input class="form-control" name="Principal" value="{$info.Principal}" style="width:120px;">
+                </td>
+                <th>联系电话</th>
+                <td>
+                    <input class="form-control" name="Telephone" value="{$info.Telephone}" style="width:120px;">
+                </td>
+            </tr>
+            <tr>
+                <th>手机</th>
+                <td>
+                    <input class="form-control" name="Mobile" value="{$info.Mobile}" style="width:120px;">
+                </td>
+                <th>邮箱</th>
+                <td>
+                    <input class="form-control" name="Email" value="{$info.Email}" style="width:120px;">
+                </td>
+            </tr>
+            <tr>
+                <th>微信号</th>
+                <td>
+                    <input class="form-control" name="Wechat" value="{$info.Wechat}" style="width:120px;">
+                </td>
+                <th>排序</th>
+                <td>
+                    <input class="form-control" name="Sort" value="{$info.Sort}" style="width:120px;">
+                </td>
+            </tr>
+            <tr>
+                <th>代理商要求</th>
+                <td>
+                    <select name="AgentRuleID" class="form-control">
+                        <volist name="cus.ar" id="o">
+                            <option value="{$o.RuleID}" <if condition="$info['AgentRuleID'] eq $o['RuleID']">selected</if> >
+                            {$o.RuleName}
+                            </option>
+                        </volist>
+                    </select>
+                </td>
+                <th>返点类型</th>
+                <td>
+                    <select name="AgentRateID" class="form-control">
+                        <volist name="cus.ae" id="r">
+                            <option value="{$r.RateID}" <if condition="$info['RateID'] eq $r['AgentRateID']">selected</if> >
+                            {$r.RateName}
+                            </option>
+                        </volist>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>备注</th>
+                <td colspan="3">
+                    <input class="form-control" name="Note" value="{$info.Note}" style="width:500px;">
+                </td>
+
+            </tr>
+        </table>
+    </form>
+    <div class="dialog-button-container">
+        <div id="dlg-buttons" class="dialog-button">
+            <input type="hidden" id="type" value="{$type}">
+            <a href="javascript:doSubmit()" class="easyui-linkbutton c6" iconcls="icon-ok" style="width: 90px">提交</a>
+            <a href="javascript:top.closeModal()" class="easyui-linkbutton" iconcls="icon-cancel" style="width: 90px">取消</a>
+        </div>
+    </div>
+</block>
+<block name="script">
+<script>
+    var form_validate = $("#form-main").validate(
+            {
+                rules: {
+                    Sort: { digits: true },
+                    LoginName: { required: true},
+                }
+                , messages: {
+                //name:'活动名称不能为空',
+                //intro:'活动简介不能为空'
+                Sort:'输入整数'
+                }
+            });
+    //提交表单
+    function doSubmit() {
+        var form_data = $("#form-main").serializeArray();
+        //form_data.push({name:"Remark",value:$("#ReMark").val()});
+        //前台验证
+        if (form_validate.form()) {
+            $.post("{$self}", form_data, function (data) {
+                show_alert(data.info);
+                if (data.status == 1) {
+                    if($("#type").val()=="add")show_alert("该用户的初始密码为："+data.url);
+                    top.closeModal();
+                }
+            }, 'json');
+        }
+    };
+</script>
+</block>

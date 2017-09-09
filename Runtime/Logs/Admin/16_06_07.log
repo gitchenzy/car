@@ -1,0 +1,1354 @@
+[ 2016-06-07T09:12:50+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-07T09:12:50+08:00 ] 127.0.0.1 /admin/account/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `employee` WHERE `Status` = 0 AND `DelFlag` = 0 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-07T09:21:59+08:00 ] 127.0.0.1 /admin/account/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `employee` WHERE `EmployeeNum` = 'admin' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-06-07T09:21:59+08:00 ] 127.0.0.1 /admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/menu.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SELECT `Pic` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: son E:\WWW\crm\Runtime\Cache\Admin\c6d57c8d442e0de0d710af1c8a7160fe.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-07T09:22:04+08:00 ] 127.0.0.1 /admin/Customer/customer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `support` [ RunTime:0.0070s ]
+SQL: SELECT `CtmStatusID`,`CtmStatusName` FROM `customerstatus` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `CtmRankID`,`CtmRankName` FROM `customerrank` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-07T09:22:04+08:00 ] 127.0.0.1 /admin/Customer/loadCustomer?sort=CreateTime&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `support` [ RunTime:0.0070s ]
+SQL: SELECT C.*,S.CtmStatusName,K.CtmRankName,R.CtmRoleName FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID left JOIN employee E on E.EmployeeID = C.DeveloperID  WHERE C.DelFlag = 0 ORDER BY C.CreateTime asc LIMIT 0,10   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID left JOIN employee E on E.EmployeeID = C.DeveloperID  WHERE C.DelFlag = 0 ORDER BY C.CreateTime asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0080s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000002' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0060s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1','2')  [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000002' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1','2')  [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000004' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000005' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1','2')  [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000006' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1','2')  [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000007' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000008' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1')  [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000016' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000017' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-07T09:22:06+08:00 ] 127.0.0.1 /admin/Market/contract
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `market` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `contracttype` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-07T09:22:06+08:00 ] 127.0.0.1 /admin/Market/loadContract?sort=SignTime&order=desc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `market` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `contracttype` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `contract` WHERE `DelFlag` = 0 ORDER BY SignTime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `contract` WHERE `DelFlag` = 0 ORDER BY SignTime desc LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttTypeName` FROM `contracttype` WHERE `CttTypeID` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ShortName` FROM `customer` WHERE `Identifier` = '350500000021' AND `DelFlag` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttTypeName` FROM `contracttype` WHERE `CttTypeID` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ShortName` FROM `customer` WHERE `Identifier` = '350500000005' AND `DelFlag` = 0 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttTypeName` FROM `contracttype` WHERE `CttTypeID` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ShortName` FROM `customer` WHERE `Identifier` = '350500000024' AND `DelFlag` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttTypeName` FROM `contracttype` WHERE `CttTypeID` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ShortName` FROM `customer` WHERE `Identifier` = '350500000022' AND `DelFlag` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `CttTypeName` FROM `contracttype` WHERE `CttTypeID` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ShortName` FROM `customer` WHERE `Identifier` = '350500000005' AND `DelFlag` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttTypeName` FROM `contracttype` WHERE `CttTypeID` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `ShortName` FROM `customer` WHERE `Identifier` = '350500000008' AND `DelFlag` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttTypeName` FROM `contracttype` WHERE `CttTypeID` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ShortName` FROM `customer` WHERE `Identifier` = '350500000008' AND `DelFlag` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttTypeName` FROM `contracttype` WHERE `CttTypeID` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ShortName` FROM `customer` WHERE `Identifier` = '350500000008' AND `DelFlag` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttTypeName` FROM `contracttype` WHERE `CttTypeID` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ShortName` FROM `customer` WHERE `Identifier` = '350500000006' AND `DelFlag` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttTypeName` FROM `contracttype` WHERE `CttTypeID` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `ShortName` FROM `customer` WHERE `Identifier` = '350500000021' AND `DelFlag` = 0 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-07T09:22:07+08:00 ] 127.0.0.1 /admin/Customer/demand
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `support` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `feedbackstatus` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `feedbackpriority` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-07T09:22:07+08:00 ] 127.0.0.1 /admin/Customer/loadDemand?sort=FeedbackID&order=desc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `support` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM feedback F INNER JOIN customer as c on c.CustomerID = F.CustomerID LEFT JOIN employee as e on e.EmployeeId = F.CtmID  WHERE F.DelFlag = 0 ORDER BY F.FeedbackID desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT c.ShortName as CustomerName,e.Name as EmployeeName,F.* FROM feedback F INNER JOIN customer as c on c.CustomerID = F.CustomerID LEFT JOIN employee as e on e.EmployeeId = F.CtmID  WHERE F.DelFlag = 0 ORDER BY F.FeedbackID desc LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 0 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 13 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `FbPriorityName` FROM `feedbackpriority` WHERE `FbPriorityID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `FbStatusName` FROM `feedbackstatus` WHERE `FbStatusID` = 5 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `FbPriorityName` FROM `feedbackpriority` WHERE `FbPriorityID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `FbPriorityName` FROM `feedbackpriority` WHERE `FbPriorityID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 14 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `FbStatusName` FROM `feedbackstatus` WHERE `FbStatusID` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `FbPriorityName` FROM `feedbackpriority` WHERE `FbPriorityID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 14 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `FbStatusName` FROM `feedbackstatus` WHERE `FbStatusID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `FbPriorityName` FROM `feedbackpriority` WHERE `FbPriorityID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 14 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `FbStatusName` FROM `feedbackstatus` WHERE `FbStatusID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `FbPriorityName` FROM `feedbackpriority` WHERE `FbPriorityID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `FbPriorityName` FROM `feedbackpriority` WHERE `FbPriorityID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 14 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `FbPriorityName` FROM `feedbackpriority` WHERE `FbPriorityID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 14 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `FbPriorityName` FROM `feedbackpriority` WHERE `FbPriorityID` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 14 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `FbPriorityName` FROM `feedbackpriority` WHERE `FbPriorityID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-07T09:22:08+08:00 ] 127.0.0.1 /admin/Customer/MoCustomer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `support` [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-07T09:22:09+08:00 ] 127.0.0.1 /admin/Customer/loadMoCustomer?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `support` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM customer C WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT C.*,S.CtmStatusName,K.CtmRankName,R.CtmRoleName FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID  WHERE C.DelFlag = 0 AND c.DeveloperID IS NULL ORDER BY C.Sort asc LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-07T09:22:10+08:00 ] 127.0.0.1 /admin/Customer/support
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `support` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-07T09:22:11+08:00 ] 127.0.0.1 /admin/Customer/loadSupport?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `support` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `support` WHERE `DelFlag` = 0 ORDER BY CreateTime desc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `support` WHERE `DelFlag` = 0 ORDER BY CreateTime desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT `ShortName` FROM `customer` WHERE `CustomerID` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = null LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `ShortName` FROM `customer` WHERE `CustomerID` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 12 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 8 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `ShortName` FROM `customer` WHERE `CustomerID` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = null LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-07T09:27:04+08:00 ] 127.0.0.1 /admin/Maintain/noMain
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `maintain` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `sop` [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-06-07T09:27:04+08:00 ] 127.0.0.1 /admin/Maintain/loadNoMain?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `maintain` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `sop` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sop` WHERE `DelFlag` = 0 AND `ForceStatus` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sop` WHERE `DelFlag` = 0 AND `ForceStatus` = 1 LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT `ShortName` FROM `customer` WHERE `Identifier` = '350500000022' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ShortName` FROM `customer` WHERE `Identifier` = '350500000024' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ShortName` FROM `customer` WHERE `Identifier` = '350500000005' LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-07T09:27:07+08:00 ] 127.0.0.1 /admin/Maintain/finishMain
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `maintain` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `sop` [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-06-07T09:27:07+08:00 ] 127.0.0.1 /admin/Maintain/loadFinishMain?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `maintain` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `sop` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sop` WHERE `DelFlag` = 0 AND `ForceStatus` > 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sop` WHERE `DelFlag` = 0 AND `ForceStatus` > 1 LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-07T10:57:46+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-07T10:57:46+08:00 ] 127.0.0.1 /admin/account/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `employee` WHERE `Status` = 0 AND `DelFlag` = 0 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-07T10:57:57+08:00 ] 127.0.0.1 /admin/account/Login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `employee` WHERE `EmployeeNum` = 'admin' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-06-07T10:57:57+08:00 ] 127.0.0.1 /admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/menu.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT `Pic` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: son E:\WWW\crm\Runtime\Cache\Admin\c6d57c8d442e0de0d710af1c8a7160fe.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-07T10:58:01+08:00 ] 127.0.0.1 /admin/Maintain/mainSop
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `maintain` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `sop` [ RunTime:0.0080s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-07T10:58:01+08:00 ] 127.0.0.1 /admin/Maintain/loadMainSop?sort=Sort&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `maintain` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `sop` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sop` WHERE `DelFlag` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sop` WHERE `DelFlag` = 0 LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT `ShortName` FROM `customer` WHERE `Identifier` = '350500000022' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ShortName` FROM `customer` WHERE `Identifier` = '350500000024' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ShortName` FROM `customer` WHERE `Identifier` = '350500000005' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-07T10:59:08+08:00 ] 127.0.0.1 /admin/Customer/customer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `support` [ RunTime:0.0070s ]
+SQL: SELECT `CtmStatusID`,`CtmStatusName` FROM `customerstatus` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `CtmRankID`,`CtmRankName` FROM `customerrank` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-07T10:59:08+08:00 ] 127.0.0.1 /admin/Customer/loadCustomer?sort=CreateTime&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `support` [ RunTime:0.0060s ]
+SQL: SELECT C.*,S.CtmStatusName,K.CtmRankName,R.CtmRoleName FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID left JOIN employee E on E.EmployeeID = C.DeveloperID  WHERE C.DelFlag = 0 ORDER BY C.CreateTime asc LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID left JOIN employee E on E.EmployeeID = C.DeveloperID  WHERE C.DelFlag = 0 ORDER BY C.CreateTime asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0080s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000002' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0070s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1','2')  [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000002' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1','2')  [ RunTime:0.0000s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000004' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000005' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1','2')  [ RunTime:0.0000s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000006' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1','2')  [ RunTime:0.0000s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000007' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000008' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1')  [ RunTime:0.0000s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000016' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000017' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-07T11:00:30+08:00 ] 127.0.0.1 /admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/menu.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SELECT `Pic` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: son E:\WWW\crm\Runtime\Cache\Admin\c6d57c8d442e0de0d710af1c8a7160fe.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-07T11:00:32+08:00 ] 127.0.0.1 /admin/Customer/customer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `support` [ RunTime:0.0070s ]
+SQL: SELECT `CtmStatusID`,`CtmStatusName` FROM `customerstatus` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `CtmRankID`,`CtmRankName` FROM `customerrank` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-07T11:00:33+08:00 ] 127.0.0.1 /admin/Customer/loadCustomer?sort=CreateTime&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `support` [ RunTime:0.0060s ]
+SQL: SELECT C.*,S.CtmStatusName,K.CtmRankName,R.CtmRoleName FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID left JOIN employee E on E.EmployeeID = C.DeveloperID  WHERE C.DelFlag = 0 ORDER BY C.CreateTime asc LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID left JOIN employee E on E.EmployeeID = C.DeveloperID  WHERE C.DelFlag = 0 ORDER BY C.CreateTime asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0070s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000002' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0060s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1','2')  [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000002' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1','2')  [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000004' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000005' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1','2')  [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000006' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1','2')  [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000007' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000008' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1')  [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000016' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000017' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-06-07T11:01:07+08:00 ] 127.0.0.1 /admin/Customer/addCustomer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `support` [ RunTime:0.0070s ]
+SQL: SELECT `CtmStatusID`,`CtmStatusName` FROM `customerstatus` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `CtmRoleID`,`CtmRoleName` FROM `customerrole` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `CtmRankID`,`CtmRankName` FROM `customerrank` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `CtmCloseID`,`CtmCloseName` FROM `customerclose` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 7 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 12 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 18 行.
+NOTIC: [8] Use of undefined constant CtmCloseID - assumed 'CtmCloseID' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 22 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 22 行.
+NOTIC: [8] Use of undefined constant co - assumed 'co' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 22 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 30 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 36 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 43 行.
+NOTIC: [8] Use of undefined constant CtmStatusID - assumed 'CtmStatusID' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 47 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 47 行.
+NOTIC: [8] Use of undefined constant cs - assumed 'cs' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 47 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 53 行.
+NOTIC: [8] Use of undefined constant CtmRoleID - assumed 'CtmRoleID' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 57 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 57 行.
+NOTIC: [8] Use of undefined constant cr - assumed 'cr' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 57 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 63 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 67 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 73 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 77 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 84 行.
+NOTIC: [8] Use of undefined constant CtmRankID - assumed 'CtmRankID' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 88 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 88 行.
+NOTIC: [8] Use of undefined constant ck - assumed 'ck' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 88 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 94 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-07T11:03:27+08:00 ] 127.0.0.1 /admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/menu.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SELECT `Pic` FROM `employee` WHERE `EmployeeID` = 2 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: son E:\WWW\crm\Runtime\Cache\Admin\c6d57c8d442e0de0d710af1c8a7160fe.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-07T11:03:30+08:00 ] 127.0.0.1 /admin/Customer/customer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `support` [ RunTime:0.0070s ]
+SQL: SELECT `CtmStatusID`,`CtmStatusName` FROM `customerstatus` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `CtmRankID`,`CtmRankName` FROM `customerrank` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(../Application/Admin/View/Huge/Public/footer.html) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory E:\WWW\crm\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-07T11:03:30+08:00 ] 127.0.0.1 /admin/Customer/loadCustomer?sort=CreateTime&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `support` [ RunTime:0.0060s ]
+SQL: SELECT C.*,S.CtmStatusName,K.CtmRankName,R.CtmRoleName FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID left JOIN employee E on E.EmployeeID = C.DeveloperID  WHERE C.DelFlag = 0 ORDER BY C.CreateTime asc LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID left JOIN employee E on E.EmployeeID = C.DeveloperID  WHERE C.DelFlag = 0 ORDER BY C.CreateTime asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0080s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000002' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0070s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1','2')  [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000002' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1','2')  [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000004' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000005' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1','2')  [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000006' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1','2')  [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000007' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000008' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1')  [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000016' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000017' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-06-07T11:03:31+08:00 ] 127.0.0.1 /admin/Customer/addCustomer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `support` [ RunTime:0.0070s ]
+SQL: SELECT `CtmStatusID`,`CtmStatusName` FROM `customerstatus` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `CtmRoleID`,`CtmRoleName` FROM `customerrole` WHERE `DelFlag` = 0  [ RunTime:0.0020s ]
+SQL: SELECT `CtmRankID`,`CtmRankName` FROM `customerrank` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `CtmCloseID`,`CtmCloseName` FROM `customerclose` WHERE `DelFlag` = 0  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 7 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 12 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 18 行.
+NOTIC: [8] Use of undefined constant CtmCloseID - assumed 'CtmCloseID' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 22 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 22 行.
+NOTIC: [8] Use of undefined constant co - assumed 'co' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 22 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 30 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 36 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 43 行.
+NOTIC: [8] Use of undefined constant CtmStatusID - assumed 'CtmStatusID' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 47 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 47 行.
+NOTIC: [8] Use of undefined constant cs - assumed 'cs' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 47 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 53 行.
+NOTIC: [8] Use of undefined constant CtmRoleID - assumed 'CtmRoleID' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 57 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 57 行.
+NOTIC: [8] Use of undefined constant cr - assumed 'cr' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 57 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 63 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 67 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 73 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 77 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 84 行.
+NOTIC: [8] Use of undefined constant CtmRankID - assumed 'CtmRankID' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 88 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 88 行.
+NOTIC: [8] Use of undefined constant ck - assumed 'ck' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 88 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 94 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-06-07T11:03:40+08:00 ] 127.0.0.1 /admin/Customer/loadCustomer?sort=CreateTime&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `support` [ RunTime:0.0070s ]
+SQL: SELECT C.*,S.CtmStatusName,K.CtmRankName,R.CtmRoleName FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID left JOIN employee E on E.EmployeeID = C.DeveloperID  WHERE C.DelFlag = 0 ORDER BY C.CreateTime asc LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID left JOIN employee E on E.EmployeeID = C.DeveloperID  WHERE C.DelFlag = 0 ORDER BY C.CreateTime asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0070s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000002' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0060s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1','2')  [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000002' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1','2')  [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000004' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000005' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1','2')  [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000006' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1','2')  [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000007' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000008' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1')  [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000016' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000017' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-06-07T11:04:12+08:00 ] 127.0.0.1 /admin/Customer/addCustomer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `support` [ RunTime:0.0070s ]
+SQL: SELECT `CtmStatusID`,`CtmStatusName` FROM `customerstatus` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `CtmRoleID`,`CtmRoleName` FROM `customerrole` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `CtmRankID`,`CtmRankName` FROM `customerrank` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+SQL: SELECT `CtmCloseID`,`CtmCloseName` FROM `customerclose` WHERE `DelFlag` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 7 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 12 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 18 行.
+NOTIC: [8] Use of undefined constant CtmCloseID - assumed 'CtmCloseID' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 22 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 22 行.
+NOTIC: [8] Use of undefined constant co - assumed 'co' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 22 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 30 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 36 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 43 行.
+NOTIC: [8] Use of undefined constant CtmStatusID - assumed 'CtmStatusID' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 47 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 47 行.
+NOTIC: [8] Use of undefined constant cs - assumed 'cs' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 47 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 53 行.
+NOTIC: [8] Use of undefined constant CtmRoleID - assumed 'CtmRoleID' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 57 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 57 行.
+NOTIC: [8] Use of undefined constant cr - assumed 'cr' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 57 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 63 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 67 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 73 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 77 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 84 行.
+NOTIC: [8] Use of undefined constant CtmRankID - assumed 'CtmRankID' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 88 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 88 行.
+NOTIC: [8] Use of undefined constant ck - assumed 'ck' E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 88 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 94 行.
+NOTIC: [8] Undefined variable: info E:\WWW\crm\Runtime\Cache\Admin\0b0841c2c660d8a67360906f0a36c464.php 第 98 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-06-07T11:04:23+08:00 ] 127.0.0.1 /admin/Customer/loadCustomer?sort=CreateTime&order=asc&limit=10&offset=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `config` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `config`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `menu` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `menu` WHERE `ShowType` = 0 ORDER BY Sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `customer` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `customerstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrole` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerrank` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `customerclose` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackstatus` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedbackpriority` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `feedback` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `paytype` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `support` [ RunTime:0.0070s ]
+SQL: SELECT C.*,S.CtmStatusName,K.CtmRankName,R.CtmRoleName FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID left JOIN employee E on E.EmployeeID = C.DeveloperID  WHERE C.DelFlag = 0 ORDER BY C.CreateTime asc LIMIT 0,10   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM customer C left JOIN customerstatus S on S.CtmStatusID = C.CtmStatusID left JOIN customerrank K on K.CtmRankID = C.CtmRankID left JOIN customerrole R on R.CtmRoleID = C.CtmRoleID left JOIN employee E on E.EmployeeID = C.DeveloperID  WHERE C.DelFlag = 0 ORDER BY C.CreateTime asc LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `contract` [ RunTime:0.0070s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000002' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0380s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1','2')  [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000002' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1','2')  [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000004' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000005' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1','2')  [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000006' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1','2')  [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000007' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000008' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `ProductName` FROM `product` WHERE `ProductID` IN ('1')  [ RunTime:0.0010s ]
+SQL: SELECT `Name` FROM `employee` WHERE `EmployeeID` = 15 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000016' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `CttProductID` FROM `contract` WHERE `Identifier` = '350500000017' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
